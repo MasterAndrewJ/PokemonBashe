@@ -1,0 +1,51 @@
+Rattata
+9,9
+It's a rat.
+30, 56, 35, 25, 35, 72
+1, 1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34
+33, 39, 98, 116, 44, 228, 158, 372, 242, 389, 162, 38, 283
+
+
+
+
+Types-
+1-grass
+2-water
+3-fire
+4-electric
+5-rock
+6-steel
+7-fighting
+8-fairy
+9-normal
+10-psyc
+11-ghost
+12-ice
+13-dragon
+14-poisen
+16-bug
+17-dark
+18-flying
+
+
+20 physical
+21 special
+22 status
+
+
+30 clever
+31 cute
+32 beutiful
+33 cool
+34 tough
+
+
+
+
+Stats:
+Name
+Tpye 1,Type 2
+Description 
+HP,Attack,Defence,Sp.Attack,Sp.Defence,Speed
+lvl for corrisponding move one, lvl for corrisponding move two, ect
+number for move one, number for move 
