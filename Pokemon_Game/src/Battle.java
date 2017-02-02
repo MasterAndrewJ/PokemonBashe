@@ -1,4 +1,12 @@
+import javax.swing.JFrame;
 
+import java.awt.*;
+import java.awt.Graphics;
+
+import javax.swing.*;
+import javax.swing.JFrame;
+import java.awt.*;
+import java.awt.Graphics;
 
 import java.io.BufferedReader; 
 import java.io.FileNotFoundException;
@@ -6,6 +14,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
+
+import javax.swing.JFrame;
+
 import java.util.Scanner;
 public class Battle {
 	Main poke = new Main();
@@ -47,10 +58,25 @@ public class Battle {
 		
 	
 	
-	public static void UserScreen(String [] args0){
-		System.out.println("what will you do");
-		//System.out.print
-		
+	public static void UserScreen(){
+		int select=1;
+		JFrame f=new JFrame("Title");
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		pictures p= new pictures();
+		f.add(p);
+		f.setSize(400, 250);
+		f.setVisible(true);
+
+
+		try {
+			p.UserMenu();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		p.paintComponent(f.getGraphics());
+		int c = e.getKeyCode ()
+		if (event.getKeyCode() == KeyEvent.VK_UP) {
 		
 		
 		
