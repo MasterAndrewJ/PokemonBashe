@@ -13,3 +13,4 @@ however today I am moving slow so I am going to just do some assigning of pokemo
 2/6/17--Sick
 2/8/17--Sick
 2/10/17--Today I am either working on key board input or just putting in pokemon move assosiation.
+AT END OF CLASS= I worked on pokemon move association and found a 2 to 3 times fast way of associating moves and made the way of identifying the move a String like 'Growl' instead of a number like '45'.
