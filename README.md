@@ -16,3 +16,4 @@ however today I am moving slow so I am going to just do some assigning of pokemo
 AT END OF CLASS= I worked on pokemon move association and found a 2 to 3 times fast way of associating moves and made the way of identifying the move a String like 'Growl' instead of a number like '45'.
 2/14/17--Today I did pokemon move association and made significant progress.
 2/16/17--Worked on pokemon move association.
+2/21/17--Worked on pokemon move association. I will do this 1 or 2 more days but then just use the pokemon I have and continue on with the game for time sake. currently I am at 84 pokemon.
