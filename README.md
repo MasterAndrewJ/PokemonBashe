@@ -20,3 +20,4 @@ AT END OF CLASS= I worked on pokemon move association and found a 2 to 3 times f
 
 3/14/17--Wasted entire day trying to fix an error
 3/16/17--Fixed error and began work on the battle menu...I might actually have to work from home...huh...
+3/22/17--Finally got the pokemon identification programm to work. Now I can move on to the pokemon keyboard interation.
