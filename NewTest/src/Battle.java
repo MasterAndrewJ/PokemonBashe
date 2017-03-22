@@ -11,7 +11,7 @@
 	import javax.swing.JFrame;
 	import java.awt.*;
 	import java.awt.Graphics;
-
+import java.io.*;
 	import java.io.BufferedReader; 
 	import java.io.FileNotFoundException;
 	import java.io.FileReader;
@@ -38,8 +38,8 @@
 			int poke_op=poke.poke_op;
 			int poke_1=poke.poke_1;	
 			//HashSet<Integer> mySet= new HashSet<Integer>();
-			String[][] pokeLIST = new String[][](getClass().getResource("/resources/Pokemon.csv"));
-			/*BufferedReader br= null;
+			String csvfile= "C:\\Users\\250148\\workspace\\NewTest\\resource\\Pokemon.csv";
+			BufferedReader br= null;
 			String line ="";
 			String splitBy= ",";
 			br = new BufferedReader(new FileReader(csvfile));
@@ -47,7 +47,7 @@
 			for(int i=0;(line=br.readLine()) != null && i < pokemonNUMBER;i++){
 				pokeLIST[i] = line.split(splitBy);
 			}
-			System.out.println(pokeLIST[1][1]);*/
+			System.out.println(pokeLIST);
 			return pokeLIST;
 			
 			
@@ -90,6 +90,41 @@
 			
 			
 		}
-		
+		/*public static string readArray(String fle){
+			int
+			try{
+				Scanner s1=new Scanner(new File(file));
+			}
+			catch (FileNotFoundExeption){
+				System.out.println("filenot found");
+			}
+		}*/
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
