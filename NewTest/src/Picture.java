@@ -1,7 +1,12 @@
 import java.awt.*;
+import java.util.Scanner;
 import java.awt.event.*;
 import javax.swing.*;
-public class Picture extends JPanel{
+import java.applet.Applet;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Rectangle;	
+public class Picture extends JPanel implements KeyListener{
 	static Battle stat;
 		static Main stats;
 		static int namenum;
@@ -48,7 +53,26 @@ public static void UserMenu() throws Exception{
 		e.printStackTrace();
 		System.out.println(pokeLIST[2][1]);
 		System.out.println(name);
+	
 	}
+}
+@Override
+public void keyPressed(KeyEvent e) {
+	paintComponent();
+	// TODO Auto-generated method stub
+	if (e.getKeyCode() == KeyEvent.VK_RIGHT){
+		g.drawString("PROPAGANDA COMUNIST PROPAGANDA!!!", 100, 200);
+	}
+}
+@Override
+public void keyReleased(KeyEvent e) {
+	// TODO Auto-generated method stub
+	
+}
+@Override
+public void keyTyped(KeyEvent e) {
+	// TODO Auto-generated method stub
+	
 }
 	
 	
