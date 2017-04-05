@@ -24,14 +24,19 @@ import java.io.*;
 	import java.util.Scanner;
 	public class Battle {
 		Main poke = new Main();
-		int poke_op=poke.poke_op;
+		 int poke_op=poke.poke_op;
 		int poke_1=poke.poke_1;
-		String[][] pokeLIST=new String[365][];
+		static String[][] pokeLIST=new String[365][];
 		static final int pokemonNUMBER = 365;
 		public Battle() throws Exception{
 				
 		} 
-		
+		String name;
+		public Battle(String s){
+			name=s;
+			System.out.println(name);
+		}
+	
 		
 		public static String[][] PokemonInt() throws Exception{
 			Main poke = new Main();
@@ -43,11 +48,12 @@ import java.io.*;
 			String line ="";
 			String splitBy= ",";
 			br = new BufferedReader(new FileReader(csvfile));
-			String[][] pokeLIST = new String[pokemonNUMBER][] ;
+			pokeLIST = new String[pokemonNUMBER][] ;
 			for(int i=0;(line=br.readLine()) != null && i < pokemonNUMBER;i++){
 				pokeLIST[i] = line.split(splitBy);
 			}
 			System.out.println(pokeLIST);
+			System.out.println("hi");
 			return pokeLIST;
 			
 			
@@ -61,30 +67,36 @@ import java.io.*;
 			*/
 		}
 			
+		public static int associate(int poke_op, int poke_1){
+			
+			int op[]=new int[7];
+        op[0] = Integer.parseInt(pokeLIST[poke_op-1][4]);
+        op[1] = Integer.parseInt(pokeLIST[poke_op-1][5]);
+        op[2] = Integer.parseInt(pokeLIST[poke_op-1][6]);
+        op[3] = Integer.parseInt(pokeLIST[poke_op-1][7]);
+        op[4] = Integer.parseInt(pokeLIST[poke_op-1][8]);
+        op[5] = Integer.parseInt(pokeLIST[poke_op-1][9]);
+        op[6] = Integer.parseInt(pokeLIST[poke_op-1][10]);
+        int pl[]=new int[7];
+        pl[0] = Integer.parseInt(pokeLIST[poke_1-1][4]);
+        pl[1] = Integer.parseInt(pokeLIST[poke_1-1][5]);
+        pl[2] = Integer.parseInt(pokeLIST[poke_1-1][6]);
+        pl[3] = Integer.parseInt(pokeLIST[poke_1-1][7]);
+        pl[4] = Integer.parseInt(pokeLIST[poke_1-1][8]);
+        pl[5] = Integer.parseInt(pokeLIST[poke_1-1][9]);
+        pl[6] = Integer.parseInt(pokeLIST[poke_1-1][10]);
+System.out.println(op[0]-pl[6]);
+			return 0;
+		}
+		int move=1;
+		int target=1;
+		public static int Move(int target,int move){
+			
+			
+			
+		}
 		
-		
-		public static void UserScreen(){
-			
-			
-			
-			int select=1;
-			JFrame f=new JFrame("Title");
-			f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		Picture p= new Picture();
-			f.add(p);
-			f.setSize(400, 250);
-			f.setVisible(true);
-
-
-			
-			try {
-				Picture.UserMenu();
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			p.paintComponent(f.getGraphics());
-			
+	
 			
 		
 			
@@ -99,7 +111,7 @@ import java.io.*;
 				System.out.println("filenot found");
 			}
 		}*/
-	}
+	
 
 	
 	

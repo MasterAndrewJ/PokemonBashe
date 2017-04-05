@@ -8,11 +8,48 @@ import java.awt.Graphics2D;
 import java.awt.Rectangle;	
 public class Picture extends JPanel implements KeyListener{
 	static Battle stat;
+
+
 		static Main stats;
 		static int namenum;
 		static String[][] pokeLIST;
 		static String name = "";
+		boolean cursor=false;
+		String mess="";
+		public void init(){
+			public void init(){
+				super.init();
+				Window w =s.getFullScreenWindow();
+				w.setFocusTraversalKeysEnabled(false);
+				w.addKeyListener(this);
+				mess="press escape to exit";
+			}
+		}
+	public static void UserScreen(){
+			
+			
+			//KeyListener this= new UserScreen();
+			int select=1;
+			JFrame f=new JFrame("Title");
+			f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Picture p= new Picture();
+			f.add(p);
+			f.setSize(400, 250);
+			f.setVisible(true);
+
+
+			
+			try {
+				Picture.UserMenu();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			p.paintComponent(f.getGraphics());
+	}
+	
 	public void paintComponent(Graphics g){
+		//KeyListener this= new UserScreen();
 		super.paintComponent(g);
 		//this.setBackground(Color.WHITE);
 	//g.setColor(Color.BLUE);
@@ -36,8 +73,18 @@ public class Picture extends JPanel implements KeyListener{
 		g.drawString("Fight", 25, 150);
 		g.drawString("Bag", 100, 150);
 		g.drawString("Pokemon", 25, 200);
-		g.drawString("Run", 100, 200);
+		//g.drawString("Run", 100, 200);
 		g.fillRect(10, 145, 10, 2);
+		//int key = e.getKeyCode();
+		for(int i=0;i<2;i--){
+		if(cursor==true){
+			g.drawString("COMUNIST PROPAGANDA", 100, 200);
+		cursor=false;	
+	    i=13;
+		}
+		}
+		System.out.println(cursor);
+		
 	}
 public static void UserMenu() throws Exception{
 	try{
@@ -58,10 +105,10 @@ public static void UserMenu() throws Exception{
 }
 @Override
 public void keyPressed(KeyEvent e) {
-	paintComponent();
+ 
 	// TODO Auto-generated method stub
 	if (e.getKeyCode() == KeyEvent.VK_RIGHT){
-		g.drawString("PROPAGANDA COMUNIST PROPAGANDA!!!", 100, 200);
+		cursor=true;
 	}
 }
 @Override
