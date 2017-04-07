@@ -14,6 +14,11 @@ public class Main {
 		Picture p =new Picture();
 		b.PokemonInt();
 		b.associate(poke_op , poke_1);
+		b.Moves();
+		int level=2;
+		int move=1;
+		int target=1;
+		System.out.println(b.Move(target, move, level));
 		//p.UserScreen();
 		Scanner Keyboard = new Scanner(System.in);
 		System.out.println("enter an integer");

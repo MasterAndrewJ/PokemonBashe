@@ -24,8 +24,12 @@ import java.io.*;
 	import java.util.Scanner;
 	public class Battle {
 		Main poke = new Main();
+		static  int pl[]=new int[7];
+		static int op[]=new int[7];
+
 		 int poke_op=poke.poke_op;
 		int poke_1=poke.poke_1;
+		static String[][] pokeMOVES=new String[365][];
 		static String[][] pokeLIST=new String[365][];
 		static final int pokemonNUMBER = 365;
 		public Battle() throws Exception{
@@ -69,7 +73,7 @@ import java.io.*;
 			
 		public static int associate(int poke_op, int poke_1){
 			
-			int op[]=new int[7];
+			
         op[0] = Integer.parseInt(pokeLIST[poke_op-1][4]);
         op[1] = Integer.parseInt(pokeLIST[poke_op-1][5]);
         op[2] = Integer.parseInt(pokeLIST[poke_op-1][6]);
@@ -77,7 +81,7 @@ import java.io.*;
         op[4] = Integer.parseInt(pokeLIST[poke_op-1][8]);
         op[5] = Integer.parseInt(pokeLIST[poke_op-1][9]);
         op[6] = Integer.parseInt(pokeLIST[poke_op-1][10]);
-        int pl[]=new int[7];
+      
         pl[0] = Integer.parseInt(pokeLIST[poke_1-1][4]);
         pl[1] = Integer.parseInt(pokeLIST[poke_1-1][5]);
         pl[2] = Integer.parseInt(pokeLIST[poke_1-1][6]);
@@ -85,18 +89,45 @@ import java.io.*;
         pl[4] = Integer.parseInt(pokeLIST[poke_1-1][8]);
         pl[5] = Integer.parseInt(pokeLIST[poke_1-1][9]);
         pl[6] = Integer.parseInt(pokeLIST[poke_1-1][10]);
+        
+     
 System.out.println(op[0]-pl[6]);
 			return 0;
 		}
-		int move=1;
-		int target=1;
-		public static int Move(int target,int move){
+		
+		public static int Move(int target,int move, int level){
+			if(target==1){
+				int temp1=op[0]*level;
+				int temp2=Integer.parseInt(pokeMOVES[move][6]);
+				int temp3= temp1-temp2;
+				return temp3;
+				
+			}else{
+				int temp1=pl[0]*level;
+				int temp2=Integer.parseInt(pokeMOVES[move][6]);
+				int temp3= temp1-temp2;
+				return temp3;
 			
+		}
+		}
+		public static void Moves() throws IOException{
+	int j=741;
+			//HashSet<Integer> mySet= new HashSet<Integer>();
+			String csvfile= "C:\\Users\\250148\\workspace\\NewTest\\resource\\PokemonMoves.csv";
+			BufferedReader br= null;
+			String line ="";
+			String splitBy= ",";
+			br = new BufferedReader(new FileReader(csvfile));
+			pokeMOVES = new String[j][] ;
+			for(int i=0;(line=br.readLine()) != null && i < j;i++){
+				pokeMOVES[i] = line.split(splitBy);
+				
+			}
+			
+			System.out.println(pokeMOVES[33][5]);
 			
 			
 		}
-		
-	
 			
 		
 			
