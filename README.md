@@ -1,5 +1,6 @@
 # PokemonBashe
 Description
+You really don't HAVE to read this.
 Description 1/25/2017--I have gotten all the pokemon and all the moves on 2 exel sheets and am currently assigning each their moves. I have also began coding the mthod that will extract the information from the sheet and imput it into the program as a 2D array.
 
 1/27/2017--I now need to begin to initilize the graphics so I can do I test battle with only words but still in the graphics screen, 
@@ -32,3 +33,4 @@ AT END OF CLASS= I worked on pokemon move association and found a 2 to 3 times f
 3/30/17--I am reoranizing the code and making the code for the keys for input. I have also got the sprites I am going to use for the game. I will need to learn how to use them tho. I am really behind...
 
 4/3/17--This class and for homework I will be improving my Java knowledge as mine is not sufficiant for that task I am assigned.
+4/7/17--Today and yesterday I worked on the battle system that takes away enemy's health based on the move used and the enemies health
