@@ -35,3 +35,8 @@ AT END OF CLASS= I worked on pokemon move association and found a 2 to 3 times f
 4/3/17--This class and for homework I will be improving my Java knowledge as mine is not sufficiant for that task I am assigned.
 
 4/7/17--Today and yesterday I worked on the battle system that takes away enemy's health based on the move used and the enemies health
+
+
+
+
+BE DONE BY ---MAY 12---!!!
