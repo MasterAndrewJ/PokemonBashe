@@ -33,4 +33,5 @@ AT END OF CLASS= I worked on pokemon move association and found a 2 to 3 times f
 3/30/17--I am reoranizing the code and making the code for the keys for input. I have also got the sprites I am going to use for the game. I will need to learn how to use them tho. I am really behind...
 
 4/3/17--This class and for homework I will be improving my Java knowledge as mine is not sufficiant for that task I am assigned.
+
 4/7/17--Today and yesterday I worked on the battle system that takes away enemy's health based on the move used and the enemies health
