@@ -36,6 +36,9 @@ AT END OF CLASS= I worked on pokemon move association and found a 2 to 3 times f
 
 4/7/17--Today and yesterday I worked on the battle system that takes away enemy's health based on the move used and the enemies health
 
+SICK week of 4/9/17
+
+4/18/17 Worked out bugs an in efficientcies.
 
 
 
