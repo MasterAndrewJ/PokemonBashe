@@ -47,11 +47,11 @@ import java.io.*;
 			int poke_op=poke.poke_op;
 			int poke_1=poke.poke_1;	
 			//HashSet<Integer> mySet= new HashSet<Integer>();
-			String csvfile= "C:\\Users\\250148\\workspace\\NewTest\\resource\\Pokemon.csv";
+			//String csvfile= "C:\\Users\\250148\\workspace\\NewTest\\resource\\Pokemon.csv";
 			BufferedReader br= null;
 			String line ="";
 			String splitBy= ",";
-			br = new BufferedReader(new FileReader(csvfile));
+			br = new BufferedReader(new FileReader("resource\\Pokemon.csv"));
 			pokeLIST = new String[pokemonNUMBER][] ;
 			for(int i=0;(line=br.readLine()) != null && i < pokemonNUMBER;i++){
 				pokeLIST[i] = line.split(splitBy);
@@ -113,11 +113,11 @@ System.out.println(op[0]-pl[6]);
 		public static void Moves() throws IOException{
 	int j=741;
 			//HashSet<Integer> mySet= new HashSet<Integer>();
-			String csvfile= "C:\\Users\\250148\\workspace\\NewTest\\resource\\PokemonMoves.csv";
+			//String csvfile= "C:\\Users\\250148\\workspace\\NewTest\\resource\\PokemonMoves.csv";
 			BufferedReader br= null;
 			String line ="";
 			String splitBy= ",";
-			br = new BufferedReader(new FileReader(csvfile));
+			br = new BufferedReader(new FileReader("resource\\PokemonMoves.csv"));
 			pokeMOVES = new String[j][] ;
 			for(int i=0;(line=br.readLine()) != null && i < j;i++){
 				pokeMOVES[i] = line.split(splitBy);
@@ -129,7 +129,11 @@ System.out.println(op[0]-pl[6]);
 			
 		}
 			
-		
+		public static void turn(){
+			
+			
+			
+		}
 			
 			
 		}
@@ -144,8 +148,6 @@ System.out.println(op[0]-pl[6]);
 		}*/
 	
 
-	
-	
 	
 	
 	

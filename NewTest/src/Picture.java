@@ -16,7 +16,7 @@ public class Picture extends JPanel implements KeyListener{
 		static String name = "";
 		boolean cursor=false;
 		String mess="";
-		public void init(){
+	/*	public void init(){
 			public void init(){
 				super.init();
 				Window w =s.getFullScreenWindow();
@@ -24,7 +24,7 @@ public class Picture extends JPanel implements KeyListener{
 				w.addKeyListener(this);
 				mess="press escape to exit";
 			}
-		}
+		}*/
 	public static void UserScreen(){
 			
 			
@@ -73,7 +73,7 @@ public class Picture extends JPanel implements KeyListener{
 		g.drawString("Fight", 25, 150);
 		g.drawString("Bag", 100, 150);
 		g.drawString("Pokemon", 25, 200);
-		//g.drawString("Run", 100, 200);
+		g.drawString("Run", 100, 200);
 		g.fillRect(10, 145, 10, 2);
 		//int key = e.getKeyCode();
 		for(int i=0;i<2;i--){

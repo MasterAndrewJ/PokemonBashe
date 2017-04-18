@@ -20,6 +20,7 @@ public class Main {
 		int target=1;
 		System.out.println(b.Move(target, move, level));
 		//p.UserScreen();
+		p.UserScreen();
 		Scanner Keyboard = new Scanner(System.in);
 		System.out.println("enter an integer");
 		int myint = Keyboard.nextInt();
