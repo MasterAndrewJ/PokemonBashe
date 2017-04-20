@@ -73,7 +73,7 @@ public class Picture extends JPanel implements KeyListener{
 		g.drawString("Fight", 25, 150);
 		g.drawString("Bag", 100, 150);
 		g.drawString("Pokemon", 25, 200);
-		g.drawString("Run", 100, 200);
+		//g.drawString("Run", 100, 200);
 		g.fillRect(10, 145, 10, 2);
 		//int key = e.getKeyCode();
 		for(int i=0;i<2;i--){

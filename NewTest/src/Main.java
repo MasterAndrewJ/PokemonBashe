@@ -1,5 +1,6 @@
 import javax.swing.JFrame;
 
+import resources.Data;
 
 import java.awt.*;
 import java.awt.Graphics;
@@ -19,12 +20,15 @@ public class Main {
 		int move=1;
 		int target=1;
 		System.out.println(b.Move(target, move, level));
+		Data d =new Data();
+		d.doc(args);
+		d.get(args);
 		//p.UserScreen();
 		p.UserScreen();
-		Scanner Keyboard = new Scanner(System.in);
+		/*Scanner Keyboard = new Scanner(System.in);
 		System.out.println("enter an integer");
 		int myint = Keyboard.nextInt();
-		System.out.println(myint+"j");
+		System.out.println(myint+"j");*/
 	}
 
 }
