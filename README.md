@@ -41,7 +41,7 @@ SICK week of 4/9/17
 4/18/17 Worked out bugs an in efficientcies.
 
 4/20/17 created a method to store pokemon data of the players pokemon including what they are as well as what level they are.
-
+4/24/17--Threads hell java is annoying as (ERROR NULL:DATA_CONVERSION)
 
 
 BE DONE BY ---MAY 12---!!!
