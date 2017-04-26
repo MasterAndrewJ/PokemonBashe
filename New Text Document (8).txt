@@ -1,0 +1,18 @@
+private BufferedImage bak;
+	private TexturePaint back;
+    private Image imgBuffer;	
+
+
+public void LoadImg(){
+		 
+		  try {
+			  Graphics2D g2d = (Graphics2D) imgBuffer.getGraphics();
+			bak = ImageIO.read(this.getClass().getResource("image.jpg"));
+		      back = new TexturePaint(bak, new Rectangle(0, 0, 60, 90));
+		      g2d.setPaint(back);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
