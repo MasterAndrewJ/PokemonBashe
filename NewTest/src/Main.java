@@ -11,6 +11,9 @@ public class Main {
 	static int poke_op=1;
 	static int poke_1=94;
 	public static void main(String[] args)throws Exception{
+
+
+		
 		Battle b = new Battle();
 		Picture p =new Picture();
 		b.PokemonInt();
@@ -25,7 +28,8 @@ public class Main {
 		d.get(args);
 		//p.UserScreen();
 		p.UserScreen();
-		/*Scanner Keyboard = new Scanner(System.in);
+		p.LoadImg();
+			/*Scanner Keyboard = new Scanner(System.in);
 		System.out.println("enter an integer");
 		int myint = Keyboard.nextInt();
 		System.out.println(myint+"j");*/

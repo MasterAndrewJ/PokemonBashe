@@ -6,10 +6,20 @@ import java.applet.Applet;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;	
+import javax.imageio.ImageIO;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class Picture extends JPanel implements KeyListener{
 	static Battle stat;
-
-
+	private BufferedImage bak;
+	private TexturePaint back;
+    private Image imgBuffer;
 		static Main stats;
 		static int namenum;
 		static String[][] pokeLIST;
@@ -121,7 +131,20 @@ public void keyTyped(KeyEvent e) {
 	// TODO Auto-generated method stub
 	
 }
-	
+	public void LoadImg() throws Exception{
+		 
+		  try {
+			  
+			  Graphics2D g2d = (Graphics2D) imgBuffer.getGraphics();
+			bak = ImageIO.read(this.getClass().getResource("image.jpg"));
+		      back = new TexturePaint(bak, new Rectangle(0, 0, 60, 90));
+		      g2d.setPaint(back);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
 	
 	
 	
