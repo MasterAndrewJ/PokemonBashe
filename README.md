@@ -45,3 +45,9 @@ SICK week of 4/9/17
 
 
 BE DONE BY ---MAY 12---!!!
+
+
+
+Git hub is one of the worst programs I have ever worked with. It is not user friend, it lack the essential function of a delete folder button, and you cannot edit files easily from with in it not to metion the issues with comunication. This program is pathetic and I fail to see that advantages of it beside Mr.Hudson perhaps being able to moniter progress but there are many better solutions to this problem.
+
+
